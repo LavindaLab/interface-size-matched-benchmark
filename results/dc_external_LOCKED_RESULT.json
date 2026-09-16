@@ -1,0 +1,55 @@
+{
+  "status": "LOCKED_EXTERNAL_EVALUATION_OPENED",
+  "panel": {
+    "rows": 80,
+    "positive": 40,
+    "negative": 40,
+    "unique_pdbs": 75,
+    "unique_families": 72,
+    "bootstrap_dependency_components": 32
+  },
+  "training": {
+    "rows": 1865,
+    "positive": 913,
+    "negative": 952,
+    "source": "evaluation_outputs/hard_improvement_development.tsv"
+  },
+  "features": {
+    "area_only": [
+      "interface_area_A2"
+    ],
+    "chemistry_only": [
+      "contacts_per_100A2",
+      "hbonds_per_100A2",
+      "salt_bridges_per_100A2",
+      "hydrophobic_contacts_per_100A2",
+      "elec_complementarity"
+    ]
+  },
+  "metrics": {
+    "area_only": {
+      "roc_auc": 0.5231250000000001,
+      "average_precision": 0.5379203375740582,
+      "brier_score": 0.4046526423890108
+    },
+    "chemistry_only": {
+      "roc_auc": 0.849375,
+      "average_precision": 0.8124830372991074,
+      "brier_score": 0.16237761814295873
+    }
+  },
+  "primary_comparison": {
+    "delta_auc_chemistry_minus_area": 0.32624999999999993,
+    "dependency_component_bootstrap_p02_5": 0.21840546754449347,
+    "dependency_component_bootstrap_p97_5": 0.40569565677481345,
+    "fraction_delta_le_zero": 0.0,
+    "valid_replicates": 20000,
+    "chemistry_auc_bootstrap_p02_5": 0.750863971299159,
+    "chemistry_auc_bootstrap_p97_5": 0.9270216962524654,
+    "area_auc_bootstrap_p02_5": 0.5024337479718767,
+    "area_auc_bootstrap_p97_5": 0.5559079184412561
+  },
+  "locked_success_rule": "chemistry AUC >= 0.65 and lower 95% family-bootstrap bound for delta AUC > 0",
+  "success": true,
+  "interpretation": "The pre-registered external success rule was met."
+}

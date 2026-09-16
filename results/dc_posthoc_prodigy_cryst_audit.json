@@ -1,0 +1,43 @@
+{
+  "status": "POST_HOC_SAME_PANEL_COMPARATOR_NOT_PART_OF_LOCKED_CONFIRMATION",
+  "panel_rows": 80,
+  "prodigy_repository": "https://github.com/haddocking/interface-classifier",
+  "prodigy_commit": "29d99d535cae3014608c9394b8809619a60fcfa2",
+  "prodigy_model_sha256": "b0bea87d845b37a83431767aa7f03bc46d2620d8caabc1195a67132f38e0a26f",
+  "feature_policy": "unchanged published PRODIGY-cryst feature order and random-forest nodes",
+  "parser_policy": "Biopython mmCIF parser with label-asym chain identifiers; standard amino acids and non-hydrogen atoms; residue pairs within the classifier's effective 5.0-A cutoff",
+  "compatibility_check_1ppe": {
+    "contacts": 71,
+    "link_density": 0.13523809523809524,
+    "biological_probability": 0.804,
+    "crystal_probability": 0.196,
+    "matches_official_readme": true
+  },
+  "metrics": {
+    "prodigy_cryst": {
+      "roc_auc": 0.8474999999999999,
+      "average_precision": 0.8588047529145015,
+      "brier_score": 0.2221978,
+      "accuracy_at_0_5": 0.6875,
+      "sensitivity_at_0_5": 0.95,
+      "specificity_at_0_5": 0.425
+    },
+    "normalized_contact": {
+      "roc_auc": 0.849375,
+      "average_precision": 0.8124830372991074,
+      "brier_score": 0.16237761814455193,
+      "accuracy_at_0_5": 0.7875,
+      "sensitivity_at_0_5": 0.725,
+      "specificity_at_0_5": 0.85
+    }
+  },
+  "normalized_contact_minus_prodigy_cryst": {
+    "observed_delta_auc": 0.001875000000000071,
+    "dependency_component_bootstrap_p02_5": -0.10173148148148145,
+    "dependency_component_bootstrap_p97_5": 0.10912783986289327,
+    "fraction_delta_le_zero": 0.46915,
+    "valid_replicates": 20000
+  },
+  "score_pearson_correlation": 0.562446546003876,
+  "interpretation": "The lightweight normalized-contact score and the published contact classifier rank the exact area-matched panel similarly. This post hoc comparator supports benchmark interpretation and is not a new confirmatory test."
+}

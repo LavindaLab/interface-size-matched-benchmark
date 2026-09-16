@@ -1,0 +1,79 @@
+{
+  "annotation_coverage": {
+    "dc_rows_total": 80,
+    "dc_rows_with_family_domain_annotation": 80,
+    "requested_entities": 2056,
+    "returned_entities": 2056,
+    "token_counts_by_type": {
+      "CATH": 113,
+      "ECOD": 300,
+      "PFAM": 68,
+      "SCOP": 459
+    }
+  },
+  "annotation_source": "https://data.rcsb.org/graphql",
+  "completed_utc": "2026-07-31T03:23:01.628250+00:00",
+  "family_domain_purged_sensitivity": {
+    "annotated_rows": 80,
+    "dependency_bootstrap": {
+      "delta_auc_sensitivity_minus_original": -0.00187499999999996,
+      "fraction_delta_le_zero": 0.8591,
+      "p02_5": -0.006925207756232732,
+      "p97_5": 0.002448979591836653,
+      "valid_replicates": 20000
+    },
+    "family_purged_score": {
+      "average_precision": 0.8120083234544185,
+      "brier_score": 0.1630658135220699,
+      "roc_auc": 0.8475
+    },
+    "negative": 40,
+    "original_score_same_rows": {
+      "average_precision": 0.8124830372991074,
+      "brier_score": 0.16237761814455193,
+      "roc_auc": 0.849375
+    },
+    "positive": 40,
+    "retained_development_rows_max": 1865,
+    "retained_development_rows_median": 1851.0,
+    "retained_development_rows_min": 1644
+  },
+  "graphql_query": "query($ids:[String!]!){polymer_entities(entity_ids:$ids){\n  rcsb_id\n  rcsb_polymer_entity_annotation{\n    annotation_id type annotation_lineage{id name}\n  }\n  polymer_entity_instances{\n    rcsb_id\n    rcsb_polymer_instance_annotation{\n      annotation_id type annotation_lineage{id name}\n    }\n  }\n  entry{\n    rcsb_id\n    rcsb_accession_info{initial_release_date}\n    rcsb_entry_info{resolution_combined}\n  }\n}}",
+  "inputs": {
+    "development": "evaluation_outputs/hard_improvement_development.tsv",
+    "development_rows": 1865,
+    "development_sha256": "6a9de9367b5e65f02d1acdc8a6221dca3b18beaf81d293fb1c64e3fec23e2f2f",
+    "external_predictions": "evaluation_outputs/dc_external_LOCKED_predictions.tsv",
+    "external_predictions_sha256": "5bad2536d7d786ac7bb331bed892fb46d45417eb6741665790f5b3e2540b99f9",
+    "external_rows": 80
+  },
+  "interpretation_policy": "Post hoc sensitivity analysis; immutable locked predictions remain the primary result.",
+  "protocol_sha256": "04f19544997872b6f17568cacf83e6eeb762ccd4a3f5170bba9e663e9689200c",
+  "quality_covariates": {
+    "initial_release_year": {
+      "biological_mean": 2006.8,
+      "class_standardized_mean_difference_biological_minus_crystal": -0.058996517039222575,
+      "crystal_mean": 2007.0,
+      "mapped_rows": 80,
+      "spearman_pvalue": 0.07706092408215706,
+      "spearman_with_frozen_contact_score": 0.1988190222953818
+    },
+    "mean_chain_residues": {
+      "biological_mean": 288.25,
+      "class_standardized_mean_difference_biological_minus_crystal": -0.16330525443074007,
+      "crystal_mean": 313.475,
+      "mapped_rows": 80,
+      "spearman_pvalue": 0.00013219529120551827,
+      "spearman_with_frozen_contact_score": -0.4144830548814981
+    },
+    "resolution_angstrom": {
+      "biological_mean": 1.5922249999999998,
+      "class_standardized_mean_difference_biological_minus_crystal": -0.1559286750983735,
+      "crystal_mean": 1.6327500000000001,
+      "mapped_rows": 80,
+      "spearman_pvalue": 0.7997600894889392,
+      "spearman_with_frozen_contact_score": -0.028807282278255183
+    }
+  },
+  "status": "POST_HOC_PROTEINS_SENSITIVITY_COMPLETE"
+}

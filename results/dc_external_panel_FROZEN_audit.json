@@ -1,0 +1,51 @@
+{
+  "status": "FROZEN_BEFORE_DESCRIPTOR_COMPUTATION",
+  "source": "Duarte-Capitani active curated DCbio/DCxtal repository files",
+  "source_interface_convention": "plain PDB rows are largest interface / EPPIC interface 1; all listed integers are expanded",
+  "eligibility": {
+    "homomer_definition": "RCSB polymer entity 1 equals polymer entity 2",
+    "family_exclusion": "remove either partner cluster seen in the full Many-2000 panel at RCSB 30% identity",
+    "area_band_A2": [
+      800.0,
+      2000.0
+    ],
+    "area_band_basis": "Duarte et al. 2012 literature-defined crystal/bio overlap region"
+  },
+  "matching": "maximum-cardinality ordered one-to-one assignment within an absolute log(EPPIC area) caliper of 0.05, then minimizing total distance; labels and area used, no coordinates or chemistry descriptors read",
+  "accounting": {
+    "input_interfaces": 163,
+    "excluded_outside_literature_ambiguity_band": 3,
+    "excluded_many_family_overlap_or_unmapped": 35,
+    "excluded_heteromer": 9
+  },
+  "eligible_by_class": {
+    "biological": 52,
+    "crystal": 64
+  },
+  "frozen_rows": 80,
+  "frozen_pairs": 40,
+  "frozen_unique_pdbs": 75,
+  "frozen_unique_families": 72,
+  "area_balance": {
+    "biological_mean": 1309.0690862421807,
+    "crystal_mean": 1296.6734862720928,
+    "biological_median": 1296.3324598985682,
+    "crystal_median": 1263.0120847096687,
+    "standardized_mean_difference_bio_minus_crystal": 0.05488369456330617,
+    "median_absolute_log_pair_difference": 0.010773951579063912,
+    "max_absolute_log_pair_difference": 0.04635222245100046
+  },
+  "locked_models": {
+    "area_prior": "balanced logistic regression on interface_area_A2",
+    "chemistry_rescue": [
+      "contacts_per_100A2",
+      "hbonds_per_100A2",
+      "salt_bridges_per_100A2",
+      "hydrophobic_contacts_per_100A2",
+      "elec_complementarity"
+    ],
+    "training_data": "hard_improvement_development.tsv only; no refitting or feature selection on DC"
+  },
+  "primary_test": "chemistry-rescue ROC AUC minus area-prior ROC AUC on the complete frozen panel, with 95% family-cluster bootstrap CI",
+  "success_rule": "chemistry AUC >= 0.65 and lower 95% family-bootstrap bound for delta AUC > 0"
+}

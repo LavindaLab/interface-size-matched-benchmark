@@ -1,0 +1,148 @@
+{
+  "status": "post hoc descriptor ablation; hypothesis-generating only",
+  "grouping": "strict connected components of shared RCSB 30%-identity chain clusters",
+  "n_rows": 2000,
+  "class_counts": {
+    "biological": 1000,
+    "crystal": 1000
+  },
+  "feature_sets": {
+    "area_only": [
+      "interface_area_A2"
+    ],
+    "area_plus_contacts_per_100A2": [
+      "interface_area_A2",
+      "contacts_per_100A2"
+    ],
+    "area_plus_hbonds_per_100A2": [
+      "interface_area_A2",
+      "hbonds_per_100A2"
+    ],
+    "area_plus_salt_bridges_per_100A2": [
+      "interface_area_A2",
+      "salt_bridges_per_100A2"
+    ],
+    "area_plus_hydrophobic_contacts_per_100A2": [
+      "interface_area_A2",
+      "hydrophobic_contacts_per_100A2"
+    ],
+    "area_plus_elec_complementarity": [
+      "interface_area_A2",
+      "elec_complementarity"
+    ],
+    "area_plus_all_normalized_chemistry": [
+      "interface_area_A2",
+      "contacts_per_100A2",
+      "hbonds_per_100A2",
+      "salt_bridges_per_100A2",
+      "hydrophobic_contacts_per_100A2",
+      "elec_complementarity"
+    ],
+    "area_plus_all_except_hydrophobic_density": [
+      "interface_area_A2",
+      "contacts_per_100A2",
+      "hbonds_per_100A2",
+      "salt_bridges_per_100A2",
+      "elec_complementarity"
+    ]
+  },
+  "result": {
+    "n_groups": 1509,
+    "largest_group_rows": 42,
+    "largest_group_fraction": 0.021,
+    "models": {
+      "area_only": {
+        "crossfit_averaged_auc": 0.904241,
+        "repeat_mean_auc": 0.9040632000000001,
+        "repeat_min_auc": 0.903252,
+        "repeat_max_auc": 0.9053040000000001
+      },
+      "area_plus_contacts_per_100A2": {
+        "crossfit_averaged_auc": 0.9066609999999999,
+        "repeat_mean_auc": 0.9064566,
+        "repeat_min_auc": 0.9056789999999999,
+        "repeat_max_auc": 0.9073
+      },
+      "area_plus_hbonds_per_100A2": {
+        "crossfit_averaged_auc": 0.9020970000000001,
+        "repeat_mean_auc": 0.9017333000000001,
+        "repeat_min_auc": 0.900386,
+        "repeat_max_auc": 0.9033709999999999
+      },
+      "area_plus_salt_bridges_per_100A2": {
+        "crossfit_averaged_auc": 0.902924,
+        "repeat_mean_auc": 0.9029054999999999,
+        "repeat_min_auc": 0.9017599999999999,
+        "repeat_max_auc": 0.90445
+      },
+      "area_plus_hydrophobic_contacts_per_100A2": {
+        "crossfit_averaged_auc": 0.937109,
+        "repeat_mean_auc": 0.9369463,
+        "repeat_min_auc": 0.9356909999999999,
+        "repeat_max_auc": 0.937799
+      },
+      "area_plus_elec_complementarity": {
+        "crossfit_averaged_auc": 0.907446,
+        "repeat_mean_auc": 0.9071375999999999,
+        "repeat_min_auc": 0.904544,
+        "repeat_max_auc": 0.9092479999999998
+      },
+      "area_plus_all_normalized_chemistry": {
+        "crossfit_averaged_auc": 0.936998,
+        "repeat_mean_auc": 0.9363728,
+        "repeat_min_auc": 0.935067,
+        "repeat_max_auc": 0.9380120000000001
+      },
+      "area_plus_all_except_hydrophobic_density": {
+        "crossfit_averaged_auc": 0.908289,
+        "repeat_mean_auc": 0.9076504,
+        "repeat_min_auc": 0.9051330000000001,
+        "repeat_max_auc": 0.909761
+      }
+    },
+    "paired_deltas_vs_area": {
+      "area_plus_contacts_per_100A2": {
+        "delta_auc": 0.0024199999999999777,
+        "group_bootstrap_p02_5": -0.0011642974902161872,
+        "group_bootstrap_p97_5": 0.006687291138272447,
+        "fraction_delta_le_zero": 0.12933333333333333
+      },
+      "area_plus_hbonds_per_100A2": {
+        "delta_auc": -0.0021439999999998127,
+        "group_bootstrap_p02_5": -0.00860763117630794,
+        "group_bootstrap_p97_5": 0.0025035036472604087,
+        "fraction_delta_le_zero": 0.7666666666666667
+      },
+      "area_plus_salt_bridges_per_100A2": {
+        "delta_auc": -0.0013170000000000126,
+        "group_bootstrap_p02_5": -0.003572371492879922,
+        "group_bootstrap_p97_5": 0.0007057735282315019,
+        "fraction_delta_le_zero": 0.8836666666666667
+      },
+      "area_plus_hydrophobic_contacts_per_100A2": {
+        "delta_auc": 0.03286800000000001,
+        "group_bootstrap_p02_5": 0.015123554142283483,
+        "group_bootstrap_p97_5": 0.057335988472969,
+        "fraction_delta_le_zero": 0.0
+      },
+      "area_plus_elec_complementarity": {
+        "delta_auc": 0.0032050000000000134,
+        "group_bootstrap_p02_5": -0.0038014851587128,
+        "group_bootstrap_p97_5": 0.012247683546314241,
+        "fraction_delta_le_zero": 0.2613333333333333
+      },
+      "area_plus_all_normalized_chemistry": {
+        "delta_auc": 0.032757000000000036,
+        "group_bootstrap_p02_5": 0.014696144222747223,
+        "group_bootstrap_p97_5": 0.058201460768105194,
+        "fraction_delta_le_zero": 0.0
+      },
+      "area_plus_all_except_hydrophobic_density": {
+        "delta_auc": 0.0040480000000000516,
+        "group_bootstrap_p02_5": -0.0073247094699255,
+        "group_bootstrap_p97_5": 0.01885760215307477,
+        "fraction_delta_le_zero": 0.3333333333333333
+      }
+    }
+  }
+}

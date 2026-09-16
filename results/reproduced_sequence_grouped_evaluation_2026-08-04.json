@@ -1,0 +1,115 @@
+{
+  "status": "exploratory sequence-grouped audit; no threshold selected",
+  "cluster_source": "official RCSB MMseqs2 sequence_identity clusters at 30% cutoff",
+  "n_rows": 2000,
+  "class_counts": {
+    "biological": 1000,
+    "crystal": 1000
+  },
+  "splits": 5,
+  "repeats": 10,
+  "groupings": {
+    "sequence_cluster30_pair": {
+      "n_groups": 1556,
+      "largest_group_rows": 41,
+      "largest_group_fraction": 0.0205,
+      "models": {
+        "area_only": {
+          "crossfit_averaged_auc": 0.9039010000000001,
+          "repeat_mean_auc": 0.9038291,
+          "repeat_min_auc": 0.902463,
+          "repeat_max_auc": 0.9048939999999999
+        },
+        "normalized_chemistry_only": {
+          "crossfit_averaged_auc": 0.842512,
+          "repeat_mean_auc": 0.841975,
+          "repeat_min_auc": 0.8410559999999999,
+          "repeat_max_auc": 0.843351
+        },
+        "area_plus_normalized_chemistry": {
+          "crossfit_averaged_auc": 0.937233,
+          "repeat_mean_auc": 0.9367317999999999,
+          "repeat_min_auc": 0.934501,
+          "repeat_max_auc": 0.93916
+        },
+        "raw_chemistry_only": {
+          "crossfit_averaged_auc": 0.9264260000000002,
+          "repeat_mean_auc": 0.9258139,
+          "repeat_min_auc": 0.9246719999999999,
+          "repeat_max_auc": 0.926821
+        }
+      },
+      "paired_deltas_vs_area": {
+        "normalized_chemistry_only": {
+          "delta_auc": -0.06138900000000003,
+          "group_bootstrap_p02_5": -0.09945003554580469,
+          "group_bootstrap_p97_5": -0.013954315748487421,
+          "fraction_delta_le_zero": 0.9928
+        },
+        "area_plus_normalized_chemistry": {
+          "delta_auc": 0.03333199999999992,
+          "group_bootstrap_p02_5": 0.01571229222879032,
+          "group_bootstrap_p97_5": 0.05894535120905282,
+          "fraction_delta_le_zero": 0.0
+        },
+        "raw_chemistry_only": {
+          "delta_auc": 0.022525000000000128,
+          "group_bootstrap_p02_5": -0.0003382597705286538,
+          "group_bootstrap_p97_5": 0.05237708468463969,
+          "fraction_delta_le_zero": 0.028
+        }
+      }
+    },
+    "strict_shared_cluster_component": {
+      "n_groups": 1509,
+      "largest_group_rows": 42,
+      "largest_group_fraction": 0.021,
+      "models": {
+        "area_only": {
+          "crossfit_averaged_auc": 0.904241,
+          "repeat_mean_auc": 0.9040632000000001,
+          "repeat_min_auc": 0.903252,
+          "repeat_max_auc": 0.9053040000000001
+        },
+        "normalized_chemistry_only": {
+          "crossfit_averaged_auc": 0.84242,
+          "repeat_mean_auc": 0.8419506,
+          "repeat_min_auc": 0.840476,
+          "repeat_max_auc": 0.843044
+        },
+        "area_plus_normalized_chemistry": {
+          "crossfit_averaged_auc": 0.936998,
+          "repeat_mean_auc": 0.9363728,
+          "repeat_min_auc": 0.935067,
+          "repeat_max_auc": 0.9380120000000001
+        },
+        "raw_chemistry_only": {
+          "crossfit_averaged_auc": 0.9260039999999999,
+          "repeat_mean_auc": 0.9255090000000001,
+          "repeat_min_auc": 0.9240769999999998,
+          "repeat_max_auc": 0.9265220000000001
+        }
+      },
+      "paired_deltas_vs_area": {
+        "normalized_chemistry_only": {
+          "delta_auc": -0.061821000000000015,
+          "group_bootstrap_p02_5": -0.10003686059577563,
+          "group_bootstrap_p97_5": -0.015500245784610893,
+          "fraction_delta_le_zero": 0.9932
+        },
+        "area_plus_normalized_chemistry": {
+          "delta_auc": 0.032757000000000036,
+          "group_bootstrap_p02_5": 0.014767966797645003,
+          "group_bootstrap_p97_5": 0.05812041061824598,
+          "fraction_delta_le_zero": 0.0
+        },
+        "raw_chemistry_only": {
+          "delta_auc": 0.021762999999999977,
+          "group_bootstrap_p02_5": -0.001511491388842559,
+          "group_bootstrap_p97_5": 0.051402773679774,
+          "fraction_delta_le_zero": 0.0414
+        }
+      }
+    }
+  }
+}
