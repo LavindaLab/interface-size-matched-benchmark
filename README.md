@@ -35,7 +35,7 @@ python3 analysis/evaluate_dc_external_locked.py \
   --predictions reproduced_dc_external_predictions.tsv
 ```
 
-The immutable release corresponding to the preprint upload is tagged `v1.0.0-biorxiv`. File hashes are recorded in `SHA256SUMS.txt` and the release manifest.
+The immutable release corresponding to the preprint upload is tagged `v1.0.1-biorxiv`. File hashes are recorded in `SHA256SUMS.txt` and the release manifest.
 
 ## External source records
 

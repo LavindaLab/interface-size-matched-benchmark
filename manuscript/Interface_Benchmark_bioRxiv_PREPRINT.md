@@ -452,9 +452,9 @@ from the EPPIC benchmark repository at commit
 `8f0b00f2a82d3f796219f9ba41dc64acf13bd65f` [18]. The public reproducibility
 repository provides the derived data, predictions, machine-readable results,
 analysis scripts and software requirements:
-https://github.com/healthai-hq/interface-size-matched-benchmark. The exact
+https://github.com/LavindaLab/interface-size-matched-benchmark. The exact
 preprint release is archived at
-https://github.com/healthai-hq/interface-size-matched-benchmark/releases/tag/v1.0.0-biorxiv.
+https://github.com/LavindaLab/interface-size-matched-benchmark/releases/tag/v1.0.1-biorxiv.
 
 
 ## Author information
