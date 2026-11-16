@@ -9,4 +9,13 @@ authors:
 version: "1.0.1-biorxiv"
 date-released: 2026-09-16
 repository-code: "https://github.com/LavindaLab/interface-size-matched-benchmark"
-
+preferred-citation:
+  type: article
+  title: "Contact organization separates biological from crystal protein interfaces matched on area and disjoint in sequence"
+  authors:
+    - family-names: Lavinda
+      given-names: Olga
+      orcid: "https://orcid.org/0000-0003-3577-5984"
+  year: 2026
+  doi: "10.26434/chemrxiv.15010687/v1"
+  url: "https://doi.org/10.26434/chemrxiv.15010687/v1"

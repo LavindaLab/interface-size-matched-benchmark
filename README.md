@@ -2,14 +2,16 @@
 
 Public reproducibility package for:
 
-> Olga Lavinda. *When interface size misleads: an area-matched, sequence-cluster-disjoint benchmark for biological-versus-crystal interface classification.*
+> Olga Lavinda. *Contact organization separates biological from crystal protein interfaces matched on area and disjoint in sequence.* ChemRxiv (2026). https://doi.org/10.26434/chemrxiv.15010687/v1
+
+The ChemRxiv preprint is the current version of the manuscript. The manuscript files in this repository are the earlier version of the same study, posted under the title *When interface size misleads: an area-matched, sequence-cluster-disjoint benchmark for biological-versus-crystal interface classification*. The data, code and locked results are the same.
 
 The repository contains the portable analysis scripts, exact derived descriptor tables, frozen panel and prediction records, grouped-development results, post hoc comparator records, software requirements, and manuscript files supporting the reported benchmark.
 
 ## Primary entry points
 
-- `manuscript/Interface_Benchmark_bioRxiv_PREPRINT.md`: author manuscript source.
-- `manuscript/When_Interface_Size_Misleads_bioRxiv_PREPRINT_2026-09-16.pdf`: rendered preprint.
+- `manuscript/Interface_Benchmark_bioRxiv_PREPRINT.md`: manuscript source, earlier version.
+- `manuscript/When_Interface_Size_Misleads_bioRxiv_PREPRINT_2026-09-16.pdf`: manuscript PDF, earlier version.
 - `data/dc_external_LOCKED_predictions.tsv`: exact locked DC predictions and descriptor rows.
 - `results/dc_external_LOCKED_RESULT.json`: frozen primary result.
 - `results/dc_external_panel_FROZEN_audit.json`: panel-freeze audit.
